@@ -1,6 +1,6 @@
 # mlflow
 ```
-# Creat .env with 
+# Create .env with 
 MYSQL_DATABASE=mlflow
 MYSQL_USER=mlflow
 MYSQL_PASSWORD=mlflow
