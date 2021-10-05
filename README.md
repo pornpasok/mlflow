@@ -16,3 +16,9 @@ docker-compose up -d --build
 # Stop
 docker-compose down -v 
 ```
+
+- Access MLFlow
+http://127.0.0.1/
+u: mlflow
+p: mlflow
+
