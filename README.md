@@ -11,9 +11,8 @@ AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
 AWS_DEFAULT_REGION=
 AWS_S3_BUCKET=s3://mlflow_bucket/mlflow/
-
-# Create HTTP authen user-password
-htpasswd -c docker/nginx/.htpasswd mlflow
+NGINX_HTTP_AUTH_USER=mlflow
+NGINX_HTTP_AUTH_PASSWORD=mlflow
 
 # Start
 docker-compose up -d --build 
@@ -22,7 +21,7 @@ docker-compose up -d --build
 docker-compose down -v 
 ```
 
-- Access MLFlow
+Access MLFlow
 http://127.0.0.1/
 u: mlflow
 p: mlflow

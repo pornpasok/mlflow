@@ -35,7 +35,11 @@ services:
 
     nginx:
         restart: always
-        build: ./docker/nginx
+        build: 
+            context: ./docker/nginx
+            args:
+              - NGINX_HTTP_AUTH_USER=${NGINX_HTTP_AUTH_USER} 
+              - NGINX_HTTP_AUTH_PASSWORD=${NGINX_HTTP_AUTH_PASSWORD}
         image: mlflow_nginx
         container_name: mlflow_nginx
         ports:
