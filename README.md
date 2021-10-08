@@ -18,6 +18,9 @@ NGINX_HTTP_AUTH_PASSWORD=mlflow
 docker-compose up -d --build 
 
 # Stop
+docker-compose down
+
+# Stop & Clean
 docker-compose down -v 
 ```
 
